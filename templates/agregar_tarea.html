@@ -1,0 +1,20 @@
+
+    
+    {% extends "base.html" %}
+
+    {% block content %}
+    
+    <div class="container mt-5">
+        <h1>Nueva tarea</h1>
+        <form method="post" action="/agregar_tarea">
+            <div class="form-group">
+                <label for="descripcion">Descripción de la tarea</label>
+                <input type="text" class="form-control" id="descripcion" name="descripcion" required>
+            </div>
+            <div m>
+                <button type="submit" class="btn btn-primary mb-3 my-4">Agregar Tarea</button>
+            </div>            
+        </form>
+    </div>
+   
+    {% endblock %}
